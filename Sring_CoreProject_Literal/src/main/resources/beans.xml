@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--    <bean id="Student" class="com.example.sring_coreproject.Student">-->
+
+    <!--        <property name="nameStudent" value="Nguyen Hong Ngoc"></property>-->
+    <!--        <property name="id" value="1"></property>-->
+    <!--    </bean>-->
+
+    <bean id="Quan" class="com.example.sring_coreproject.Student">
+
+
+        <constructor-arg name="nameStudent" value="NgHEM hONG QUAN"/>
+        <constructor-arg name="id" value="2"/>
+    </bean>
+    <bean id="Ngoc" class="com.example.sring_coreproject.Student">
+
+
+        <constructor-arg name="id" value="1"/>
+<!--        // mac du gia trị chuyền vào là một chuôi trong khi contructor truyền vào là
+                1 int nhưng Spring sẽ tự convert sang đsung kiểu của nó
+                Chúng ta cung có thể truyền type = "int" trong cấu hình beans để convert-->
+    </bean>
+</beans>
