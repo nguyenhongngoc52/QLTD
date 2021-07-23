@@ -3,8 +3,10 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 <bean id="math" class="com.example.spring_coreobject_injection.MathCheat"></bean>
+<!--    //bean đê tạo 1 đối tượng trên container để APContexxt quản lí-->
     <bean id="student" class="com.example.spring_coreobject_injection.Student">
     <property name="id" value="1000"></property>
+<!--        //khi sử dụng property thì sẽ tìm đến phương thức set-->
     <property name="mathCheat" ref="math"/>
 
 
