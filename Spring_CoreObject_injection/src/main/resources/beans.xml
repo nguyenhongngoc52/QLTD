@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+<bean id="math" class="com.example.spring_coreobject_injection.MathCheat"></bean>
+    <bean id="student" class="com.example.spring_coreobject_injection.Student">
+    <property name="id" value="1000"></property>
+    <property name="mathCheat" ref="math"/>
+
+
+</bean>
+
+    <bean id="student2" class="com.example.spring_coreobject_injection.AnotherStudent">
+        <property name="mathCheat" ref="math" />
+    </bean>
+</beans>
