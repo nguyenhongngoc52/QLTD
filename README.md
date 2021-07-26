@@ -1,2 +1,2 @@
 # Spring_Core
-asdasdasdasdasdasdasdasdasdasdasdasd
+File beans cấu hình đặt trong resource
